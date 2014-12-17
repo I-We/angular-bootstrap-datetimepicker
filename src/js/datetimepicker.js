@@ -320,7 +320,6 @@ angular.module('ui.bootstrap.datetimepicker', [])
             var tempDate = new Date(unixDate);
             return new Date(tempDate.getTime() + (tempDate.getTimezoneOffset() * 60000));
           }
-          return null;
         };
 
         var getUTCTime = function () {
@@ -328,7 +327,6 @@ angular.module('ui.bootstrap.datetimepicker', [])
             var tempDate = moment(scope.ngModel).toDate();
             return tempDate.getTime() - (tempDate.getTimezoneOffset() * 60000);
           }
-          return null;
         };
 
         scope.changeView = function (viewName, unixDate, event) {

@@ -317,8 +317,7 @@ angular.module('ui.bootstrap.datetimepicker', [])
 
         var getDate = function (unixDate) {
           if (unixDate) {
-            var tempDate = new Date(unixDate);
-            return new Date(tempDate.getTime() + (tempDate.getTimezoneOffset() * 60000));
+            return new Date(unixDate);
           }
         };
 
